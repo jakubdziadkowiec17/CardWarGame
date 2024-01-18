@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="700.0" maxWidth="700.0" minHeight="700.0" minWidth="700.0" prefHeight="700.0" prefWidth="700.0" spacing="20.0" style="-fx-background-color: #ECF4F6;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cardgame.TableController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <Label text="War - Card Game" textAlignment="CENTER" textFill="#350376">
+        <font>
+            <Font name="Agency FB Bold" size="80.0" />
+        </font>
+    </Label>
+    <Label text="Players Table">
+        <font>
+            <Font name="System Bold" size="40.0" />
+        </font>
+    </Label>
+   <TableView fx:id="tableView" prefHeight="390.0" prefWidth="660.0">
+     <columns>
+       <TableColumn fx:id="placeColumn" editable="false" prefWidth="45.60000801086426" sortable="false" text="#" />
+       <TableColumn fx:id="nicknameColumn" editable="false" prefWidth="184.79998016357422" sortable="false" text="Nickname" />
+         <TableColumn fx:id="wonColumn" editable="false" prefWidth="70.39996337890625" sortable="false" text="Won" />
+         <TableColumn fx:id="unresolvedColumn" editable="false" prefWidth="70.39996337890625" sortable="false" text="Unresolved" />
+         <TableColumn fx:id="lostColumn" editable="false" prefWidth="70.39996337890625" sortable="false" text="Lost" />
+         <TableColumn fx:id="allColumn" editable="false" prefWidth="75.0" sortable="false" text="All" />
+         <TableColumn fx:id="date_of_the_last_gameColumn" editable="false" prefWidth="141.5999755859375" sortable="false" text="Date of the last game" />
+     </columns>
+   </TableView>
+    <Button mnemonicParsing="false" onAction="#goToStartApplication" prefHeight="50.0" prefWidth="461.0" style="-fx-background-color: #350376;" text="Menu" textAlignment="CENTER" textFill="WHITE">
+        <font>
+            <Font name="System Bold" size="24.0" />
+        </font>
+        <cursor>
+            <Cursor fx:constant="CROSSHAIR" />
+        </cursor>
+    </Button>
+    <cursor>
+        <Cursor fx:constant="DEFAULT" />
+    </cursor>
+</VBox>
