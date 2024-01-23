@@ -1,7 +1,7 @@
 # CardWarGame
 
 The project focuses on the implementation of an application presenting a card war game. The application allows two players to play on two different views in the application. The mentioned gameplay is possible through the use of network communication and multithreading. It takes place on the server to which clients connect. In order to connect to the server, it must be started in another process. In this context, a client is an application that sends queries or requests to a server, waiting for a response. The server, on the other hand, is the application that receives these requests, processes them and responds to clients. The server provides ongoing information about its status and players joining the game. Thanks to this, you can monitor the operating status of the server. The GameHandler class in the project allows you to handle the logic of the card war game. At the same time, it implements the Runnable interface to support multithreading. Players' applications communicate via network sockets.
-
+  
 ----------------------------------------
 
 **Technologies used in the project**
